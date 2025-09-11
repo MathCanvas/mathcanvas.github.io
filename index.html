@@ -69,9 +69,21 @@
       white-space: nowrap;
       padding: 0.5em 0.75em;
     }
-    .gold { color: #FFD700; text-shadow: 0 0 2px #c9a300; }
-    .silver { color: #C0C0C0; text-shadow: 0 0 2px #9e9e9e; }
-    .bronze { color: #CD7F32; text-shadow: 0 0 2px #a46628; }
+    
+    /* --- MODIFICATION: Updated medal styles for better readability --- */
+    /* Softer gold with background highlight. !important overrides Bulma's striped style. */
+    .gold { 
+      background-color: #FFECB3 !important; 
+    }
+    /* Softer silver with background highlight. */
+    .silver { 
+      background-color: #E0E0E0 !important; 
+    }
+    /* Softer bronze with background highlight. */
+    .bronze { 
+      background-color: #FFDAB9 !important; 
+    }
+    
     .model-cell {
       font-weight: bold;
     }
@@ -221,7 +233,7 @@
 <!-- START: New PRISM-Bench Leaderboard Section -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">PRISM-Bench Leaderboard</h2>
+    <h2 class="title is-3 has-text-centered">Official Leaderboard</h2>
 
     <!-- Tab navigation -->
     <div class="tabs is-centered is-boxed">
@@ -246,13 +258,13 @@
                 <th rowspan="2">Source</th>
                 <th rowspan="2">Date</th>
                 <th colspan="3">Overall</th>
-                <th colspan="3">Track 1: Object Relations</th>
-                <th colspan="3">Track 2: Spatial Awareness</th>
-                <th colspan="3">Track 3: Counting</th>
-                <th colspan="3">Track 4: Attribute Binding</th>
-                <th colspan="3">Track 5: Text in Image</th>
-                <th colspan="3">Track 6: Complex Actions</th>
-                <th colspan="3">Track 7: Long Text (GCoT)</th>
+                <th colspan="3">Imaginatioin</th>
+                <th colspan="3">Entity</th>
+                <th colspan="3">Text rendering</th>
+                <th colspan="3">Style</th>
+                <th colspan="3">Affection</th>
+                <th colspan="3">Composition</th>
+                <th colspan="3">Long text</th>
               </tr>
               <tr>
                 <th>Align</th><th>Aes</th><th>Avg</th>
@@ -269,10 +281,12 @@
               <!-- MODIFICATION: Fill in your actual data here. -->
               <tr>
                 <td>1</td>
-                <td class="model-cell"><span class="gold">Our-Model-Finetuned 🥇</span></td>
+                <!-- MODIFICATION: Applied 'gold' class to the cell and removed the span -->
+                <td class="model-cell gold">Our-Model-Finetuned 🥇</td>
                 <td><a href="#" target="_blank">Link</a></td>
                 <td>2025-09-10</td>
-                <td>85.0</td><td>86.5</td><td><b>85.8</b></td>
+                <!-- MODIFICATION: Applied 'gold' class to the first score cell -->
+                <td>85.0</td><td>86.5</td><td> class="gold" <b>85.8</b></td>
                 <td>88.1</td><td>89.2</td><td>88.7</td>
                 <td>86.5</td><td>87.1</td><td>86.8</td>
                 <td>82.3</td><td>83.0</td><td>82.7</td>
@@ -283,10 +297,12 @@
               </tr>
               <tr>
                 <td>2</td>
-                <td class="model-cell"><span class="silver">Flux-dev 🥈</span></td>
+                <!-- MODIFICATION: Applied 'silver' class to the cell and removed the span -->
+                <td class="model-cell silver">Flux-dev 🥈</td>
                 <td><a href="#" target="_blank">Link</a></td>
                 <td>2025-08-15</td>
-                <td>83.2</td><td>84.0</td><td><b>83.6</b></td>
+                <!-- MODIFICATION: Applied 'silver' class to the first score cell -->
+                <td>83.2</td><td>84.0</td><td> class="silver" <b>83.6</b></td>
                 <td>87.0</td><td>88.0</td><td>87.5</td>
                 <td>87.2</td><td>88.2</td><td>87.7</td>
                 <td>79.5</td><td>80.5</td><td>80.0</td>
@@ -297,10 +313,12 @@
               </tr>
               <tr>
                 <td>3</td>
-                <td class="model-cell"><span class="bronze">Kolors 🥉</span></td>
+                <!-- MODIFICATION: Applied 'bronze' class to the cell and removed the span -->
+                <td class="model-cell bronze">Kolors 🥉</td>
                 <td><a href="#" target="_blank">Link</a></td>
                 <td>2025-07-20</td>
-                <td>80.5</td><td>81.5</td><td><b>81.0</b></td>
+                <!-- MODIFICATION: Applied 'bronze' class to the first score cell -->
+                <td>80.5</td><td>81.5</td><td><b>81.0 class="bronze" </b></td>
                 <td>84.5</td><td>85.5</td><td>85.0</td>
                 <td>83.1</td><td>84.1</td><td>83.6</td>
                 <td>75.0</td><td>76.0</td><td>75.5</td>
