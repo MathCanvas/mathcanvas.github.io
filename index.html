@@ -143,26 +143,6 @@
 </section>
 <!-- End teaser -->
 
-<!-- Dataset Visualization -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-five-fifths">
-        <h2 class="title is-3">FLUX-Reason-6M Dataset Visualization</h1>
-        <div class="content has-text-justified">
-          <!-- MODIFICATION: A brief description of your dataset. -->
-          <p>
-            <b>FLUX-Reason-6M</b> is a large-scale dataset containing over <b>6 million</b> text-image pairs designed to challenge and evaluate the reasoning abilities of modern text-to-image models. It covers a wide array of reasoning dimensions, including spatial relations, object counting, attribute binding, and complex compositions.
-          </p>
-          <!-- MODIFICATION: Replace with an image that visualizes the structure or examples from your dataset. -->
-          <img src="static/images/dataset_visualization.jpg" style="max-width:100%; height:auto;">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Dataset Visualization -->
-
 <!-- Paper abstract -->
 <section class="section hero is-small">
   <div class="container is-max-desktop">
@@ -172,7 +152,7 @@
         <div class="content has-text-justified">
           <!-- MODIFICATION: Your paper's abstract goes here. -->
           <p>
-          Recent advancements in text-to-image (T2I) generation have produced visually stunning results, yet models often struggle with complex prompts that require compositional reasoning. This limitation stems from a lack of large-scale, high-quality datasets specifically designed to train and evaluate such capabilities. To address this gap, we introduce <b>FLUX-Reason-6M</b>, a new dataset with over 6 million text-image pairs meticulously curated to cover diverse reasoning tasks, including spatial relationships, counting, attribute binding, and complex interactions. Furthermore, we present <b>PRISM-Bench</b>, a comprehensive and challenging benchmark derived from our dataset to rigorously assess the reasoning abilities of T2I models. Our benchmark provides a multi-faceted evaluation, offering deeper insights into model strengths and weaknesses beyond simple prompt-image similarity. We demonstrate the utility of FLUX-Reason-6M by fine-tuning several state-of-the-art models, showing significant improvements in their reasoning performance on PRISM-Bench. Our contributions provide the community with a valuable resource for building and evaluating the next generation of T2I models with advanced reasoning skills.
+          The advancement of open-source text-to-image (T2I) models has been hindered by the absence of large-scale, reasoning-focused datasets and comprehensive evaluation benchmarks, resulting in a performance gap compared to leading closed-source systems. To address this challenge, We introduce <b>FLUX-Reason-6M</b> and <b>PRISM-Bench</b> (<b>P</b>recise and <b>R</b>obust <b>I</b>mage <b>S</b>ynthesis <b>M</b>easurement <b>Bench</b>mark). FLUX-Reason-6M is a massive dataset consisting of <b>6 million</b> high-quality FLUX-generated images and <b>20 million</b> bilingual (English and Chinese) descriptions specifically designed to teach complex reasoning. The image are organized according to six key characteristics: Imagination, Entity, Text rendering, Style, Affection, and Composition, and design explicit <b>Generation Chain-of-Thought (GCoT)</b> to provide detailed breakdowns of image generation steps. The whole data curation takes <b>four months of computation on 128 A100 GPUs</b>, providing the community with a resource previously unattainable outside of large industrial labs. PRISM-Bench offers a novel evaluation standard with seven distinct tracks, including a formidable Long Text challenge using GCoT. Through carefully designed prompts, it utilizes advanced vision-language models for nuanced human-aligned assessment of prompt-image alignment and image aesthetics. Our extensive evaluation of 19 leading models on PRISM-Bench reveals critical performance gaps and highlights specific areas requiring improvement. Our dataset, benchmark, and evaluation code are released to catalyze the next wave of reasoning-oriented T2I generation.
           </p>
         </div>
       </div>
