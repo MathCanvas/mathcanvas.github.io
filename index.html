@@ -172,9 +172,10 @@
           <!-- MODIFICATION: List your key contributions here. -->
           <p>
           <ul>
-            <li>We introduce <b>FLUX-Reason-6M</b>, the largest-to-date text-to-image dataset specifically designed for compositional reasoning, containing over 6 million carefully curated pairs.</li>
-            <li>We propose <b>PRISM-Bench</b>, a comprehensive benchmark with fine-grained categories to provide a holistic and challenging evaluation of the reasoning capabilities of T2I models.</li>
-            <li>We provide an in-depth analysis of current state-of-the-art T2I models using PRISM-Bench, revealing key areas for improvement and demonstrating the effectiveness of fine-tuning on FLUX-Reason-6M.</li>
+            <li><b>FLUX-Reason-6M: A Landmark Dataset.</b> We release the first 6-million-scale T2I dataset engineered for reasoning, featuring 20 million bilingual captions and pioneering generation chain of thought prompts. This dataset is created using 128 A100 GPUs over a 4-month period, aiming to serve as the foundational dataset for the next generation of T2I models.</li>
+            <li><b>PRISM-Bench: A New Standard for Evaluation.</b> We establish a comprehensive, seven-track benchmark that uses GPT-4.1 and Qwen2.5-VL-72B for nuanced and robust evaluation, offering the community a reliable tool to measure models’ true capabilities.</li>
+            <li><b>Actionable Insights from Extensive Benchmarking.</b> Our extensive and rigorous evaluation of leading models reveals the gaps between different models and potential areas for improvement, providing a clear roadmap for future research.</li>
+            <li><b>Democratizing a Revolution in T2I.</b> We publicly release the entire dataset, benchmark, and evaluation suite to lower the financial and computational barriers to entry, enabling researchers worldwide to build and test more capable generative models.</li>
           </ul>
           </p>
         </div>
@@ -183,38 +184,6 @@
   </div>
 </section>
 <!-- End Contributions -->
-
-<!-- Dataset and Benchmark Overview -->
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-five-fifths">
-        <h1 class="title is-3">Dataset & Benchmark Overview</h1>
-        <div class="content has-text-justified">
-          <div style="display: flex; justify-content: space-around; align-items: center; gap: 20px;">
-            <!-- MODIFICATION: Replace with an image illustrating your dataset creation/structure. -->
-            <img src="static/images/dataset_overview.png" style="max-width:50%; height:auto;">
-            <div style="border-left: 2px solid #ccc; height: 200px;"></div>
-            <!-- MODIFICATION: Replace with an image illustrating your benchmark evaluation process. -->
-            <img src="static/images/benchmark_overview.png" style="max-width:50%; height:auto;">
-          </div>
-          <p>
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
-              <!-- MODIFICATION: Update descriptions for the images above. -->
-              <div style="flex: 1;">
-                <strong>Left:</strong> The creation pipeline for FLUX-Reason-6M, which involves large-scale data synthesis and rigorous filtering to ensure high-quality, reasoning-focused text-image pairs.
-              </div>
-              <div style="flex: 1;">
-                <strong>Right:</strong> The evaluation framework of PRISM-Bench, which uses automated metrics and human evaluation to score models across multiple reasoning dimensions.
-              </div>
-            </div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Overview -->
 
 <!-- PRISM-Bench Leaderboard Section -->
 <section class="section hero is-light" style="padding: 20px;">
