@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="HPSv3: Towards Wide-Spectrum Human Preference Score (ICCV 2025)">
+  <meta property="og:title" content="HPSv3: Towards Wide-Spectrum Human Preference Score"/>
+  <meta property="og:description" content="HPSv3: A state-of-the-art human preference score model for evaluating image quality and prompt alignment"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="HPSv3: Towards Wide-Spectrum Human Preference Score">
+  <meta name="twitter:description" content="HPSv3: A state-of-the-art human preference score model for evaluating image quality and prompt alignment">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="HPSv3, Human Preference Score, Image Quality Assessment, ICCV 2025, Computer Vision, Image Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>HPSv3: Towards Wide-Spectrum Human Preference Score</title>
+  <link rel="icon" type="image/x-icon" href="static/images/human_preference_score_v3_icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <style>
+    body {
+      zoom: 1.0;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">HPSv3: Towards Wide-Spectrum Human Preference Score</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yuhang-ma.github.io" target="_blank">Yuhang Ma</a><sup>1,3*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://xilanhua12138.github.io" target="_blank">Yunhao Shui</a><sup>1,4*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=cnOAMbUAAAAJ" target="_blank">Xiaoshi Wu</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://keqiangsun.github.io" target="_blank">Keqiang Sun</a><sup>1,2†</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=BN2Ze-QAAAAJ&hl=zh-CN" target="_blank">Hongsheng Li</a><sup>2,5,6†</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Mizzen AI&ensp;&ensp; <sup>2</sup>CUHK MMLab&ensp;&ensp; <sup>3</sup>King's College London&ensp;&ensp; <sup>4</sup>Shanghai Jiaotong University&ensp;&ensp; <br><sup>5</sup>Shanghai AI Laboratory&ensp;&ensp; <sup>6</sup>CPII, InnoHK<br>ICCV 2025</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution&ensp;&ensp; <sup>†</sup>Equal Advising</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2508.03789" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/MizzenAI/HPSv3" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                  <!-- Huggingface model -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/MizzenAI/HPSv3" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p>🤗</p>
+                    </span>
+                    <span>Model</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/MizzenAI/HPDv3" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2508.03789" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="has-text-centered"></div>
+        <img src="static/images/teaser.png" alt="Teaser Image" style="max-width:110%; height:auto; display:inline-block; transform:translateX(-5%);">
+      <h2 class="subtitle has-text-centered">
+        We introduce <b>HPSv3</b>, a model designed to align with human preferences and <b>HPDv3</b>, a wide-spectrum human preference dataset containing both real images and generated images.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3">HPDv3 Dataset Visualization</h1>
+        <div class="content has-text-justified">
+          <p>
+            We present <b>Human Preference Dataset v3 (HPDv3)</b>, a comprehensive dataset containing <b>1.17 million</b> binary preference choices across <b>1.08 million</b> images, grouped in pairs by prompt. 
+          </p>
+          <img src="static/images/dataset/datasetvisual_3.jpg" style="max-width:110%; height:auto; display:inline-block; transform:translateX(-5%);">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h1 class="title is-3">Abstract</h1>
+        <div class="content has-text-justified">
+          <p>
+          Evaluating text-to-image generation models requires alignment with human perception, yet existing human-centric metrics are constrained by limited data coverage, suboptimal feature extraction, and inefficient loss functions. To address these challenges, we introduce Human Preference Score v3 (HPSv3). (1) We release HPDv3, the first wide-spectrum human preference dataset integrating <b>1.08M</b> text-image pairs and <b>1.17M</b> annotated pairwise comparisons from state-of-the-art generative models and low to high-quality real-world images. (2) We introduce a VLM-based preference model trained using an uncertainty-aware ranking loss for fine-grained ranking.
+          Besides, we propose Chain-of-Human-Preference (CoHP), an iterative image refinement method that enhances quality without extra data, using HPSv3 to select the best image at each step.
+          Our contributions provide a robust benchmark for full-spectrum evaluation and introduce a scalable, human-aligned approach to improving image generation quality.
+          Extensive experiments demonstrate that HPSv3 serves as a robust metric for wide-spectrum image evaluation, and CoHP offers an efficient and human-aligned approach to improve image generation quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Contribution -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h1 class="title is-3">Contributions</h1>
+        <div class="content has-text-justified">
+          <p>
+          <ul>
+            <li>We propose the wide-spectrum human preference dataset HPDv3 by integrating high-quality real-world images and state-of-the-art generative model outputs, including 1.08M text-image pairs and 1.17M annotated pairwise comparisons. This serves as a nuanced benchmark for evaluating generative models.</li>
+            <li>We introduce HPSv3, a human preference model trained with HPDv3, which leverages the feature of VLMs and is trained using an uncertainty-aware ranking loss to discern subtle differences in training samples.</li>
+            <li>We introduce CoHP, a novel reasoning approach to enhance image generation quality by iteratively refining outputs using HPSv3.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contribution -->
+
+<!-- Model Overview -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h1 class="title is-3">Model Architecture & COHP Method</h1>
+        <div class="content has-text-justified">
+          <div style="display: flex; justify-content: space-around; align-items: center; gap: 20px;">
+            <img src="static/images/model_overview.png" style="max-width:50%; height:auto;">
+            <div style="border-left: 2px solid #ccc; height: 200px;"></div>
+            <img src="static/images/cohpoverview.png" style="max-width:50%; height:auto;">
+          </div>
+          <p>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
+              <div style="flex: 1;">
+                <strong>Left:</strong> HPSv3 employs a VLM backbone to extract rich semantic representations from images and captions, then utilizes uncertainty-aware ranking to effectively learn human preferences from paired comparison data.
+              </div>
+              <div style="flex: 1;">
+                <strong>Right:</strong> CoHP incorporates both model preferences and sample references, selected through HPSv3, to build a thinking-and-choosing image generation process.
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contribution -->
+
+<section class="section hero is-small" style="background-color: #f9f9f9; padding: 20px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <!-- Title -->
+        <h2 class="title is-3" style="color: #333; margin-bottom: 20px; font-weight: bold;">HPSv3 Benchmark</h1>
+        
+        <!-- Table -->
+        <div class="content has-text-centered">
+          <table style="width: 100%; border-collapse: collapse; margin: 20px auto; font-size: 14px;">
+            <thead>
+              <tr style="background-color: #87CEEB; color: white;">
+                <th>Models</th>
+                <th>All</th>
+                <th>Characters</th>
+                <th>Arts</th>
+                <th>Design</th>
+                <th>Architecture</th>
+                <th>Animals</th>
+                <th>Natural Scenery</th>
+                <th>Transportation</th>
+                <th>Products</th>
+                <th>Plants</th>
+                <th>Food</th>
+                <th>Science</th>
+                <th>Others</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="font-weight: bold;">Kolors</td>
+                <td style="font-weight: bold;">10.55</td>
+                <td style="font-weight: bold;">11.79</td>
+                <td style="font-weight: bold;">10.47</td>
+                <td style="font-weight: bold;">9.87</td>
+                <td style="text-decoration: underline;">10.82</td>
+                <td style="font-weight: bold;">10.60</td>
+                <td>9.89</td>
+                <td style="text-decoration: underline;">10.68</td>
+                <td style="text-decoration: underline;">10.93</td>
+                <td style="font-weight: bold;">10.50</td>
+                <td style="font-weight: bold;">10.63</td>
+                <td style="text-decoration: underline;">11.06</td>
+                <td style="text-decoration: underline;">9.51</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Flux-dev</td>
+                <td style="text-decoration: underline;">10.43</td>
+                <td style="text-decoration: underline;">11.70</td>
+                <td style="text-decoration: underline;">10.32</td>
+                <td>9.39</td>
+                <td style="font-weight: bold;">10.93</td>
+                <td style="text-decoration: underline;">10.38</td>
+                <td style="text-decoration: underline;">10.01</td>
+                <td style="font-weight: bold;">10.84</td>
+                <td style="font-weight: bold;">11.24</td>
+                <td style="text-decoration: underline;">10.21</td>
+                <td>10.38</td>
+                <td style="font-weight: bold;">11.24</td>
+                <td>9.16</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Playground-v2.5</td>
+                <td>10.27</td>
+                <td>11.07</td>
+                <td>9.84</td>
+                <td style="text-decoration: underline;">9.64</td>
+                <td>10.45</td>
+                <td style="text-decoration: underline;">10.38</td>
+                <td>9.94</td>
+                <td>10.51</td>
+                <td style="text-decoration: underline;">10.62</td>
+                <td>10.15</td>
+                <td style="text-decoration: underline;">10.62</td>
+                <td>10.84</td>
+                <td>9.39</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Infinity</td>
+                <td>10.26</td>
+                <td>11.17</td>
+                <td>9.95</td>
+                <td>9.43</td>
+                <td>10.36</td>
+                <td>9.27</td>
+                <td style="font-weight: bold;">10.11</td>
+                <td>10.36</td>
+                <td>10.59</td>
+                <td>10.08</td>
+                <td>10.30</td>
+                <td>10.59</td>
+                <td style="font-weight: bold;">9.62</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">CogView4</td>
+                <td>9.61</td>
+                <td>10.72</td>
+                <td>9.86</td>
+                <td>9.33</td>
+                <td>9.88</td>
+                <td>9.16</td>
+                <td>9.45</td>
+                <td>9.69</td>
+                <td>9.86</td>
+                <td>9.45</td>
+                <td>9.49</td>
+                <td>10.16</td>
+                <td>8.97</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">PixArt-&#931</td>
+                <td>9.37</td>
+                <td>10.08</td>
+                <td>9.07</td>
+                <td>8.41</td>
+                <td>9.83</td>
+                <td>8.86</td>
+                <td>8.87</td>
+                <td>9.44</td>
+                <td>9.47</td>
+                <td>9.52</td>
+                <td>9.73</td>
+                <td>10.35</td>
+                <td>8.58</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Gemini 2.0 Flash</td>
+                <td>9.21</td>
+                <td>9.98</td>
+                <td>8.44</td>
+                <td>7.64</td>
+                <td>10.11</td>
+                <td>9.42</td>
+                <td>9.01</td>
+                <td>9.74</td>
+                <td>9.64</td>
+                <td>9.55</td>
+                <td>10.16</td>
+                <td>7.61</td>
+                <td>9.23</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">SDXL</td>
+                <td>8.20</td>
+                <td>8.67</td>
+                <td>7.63</td>
+                <td>7.53</td>
+                <td>8.57</td>
+                <td>8.18</td>
+                <td>7.76</td>
+                <td>8.65</td>
+                <td>8.85</td>
+                <td>8.32</td>
+                <td>8.43</td>
+                <td>8.78</td>
+                <td>7.29</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">HunyuanDit</td>
+                <td>8.19</td>
+                <td>7.96</td>
+                <td>8.11</td>
+                <td>8.28</td>
+                <td>8.71</td>
+                <td>7.24</td>
+                <td>7.86</td>
+                <td>8.33</td>
+                <td>8.55</td>
+                <td>8.28</td>
+                <td>8.31</td>
+                <td>8.48</td>
+                <td>8.20</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">SD3-Medium</td>
+                <td>5.31</td>
+                <td>6.70</td>
+                <td>5.98</td>
+                <td>5.15</td>
+                <td>5.25</td>
+                <td>4.09</td>
+                <td>5.24</td>
+                <td>4.25</td>
+                <td>5.71</td>
+                <td>5.84</td>
+                <td>6.01</td>
+                <td>5.71</td>
+                <td>4.58</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">SD2</td>
+                <td>-0.24</td>
+                <td>-0.34</td>
+                <td>-0.56</td>
+                <td>-1.35</td>
+                <td>-0.24</td>
+                <td>-0.54</td>
+                <td>-0.32</td>
+                <td>1.00</td>
+                <td>1.11</td>
+                <td>-0.01</td>
+                <td>-0.38</td>
+                <td>-0.38</td>
+                <td>-0.84</td>
+              </tr>
+              <!-- Add other rows similarly -->
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- Description -->
+        <div class="content has-text-justified" style="margin-top: 20px;">
+          <p style="font-size: 16px; line-height: 1.8; color: #555;">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{ma2025hpsv3widespectrumhumanpreference,
+        title={HPSv3: Towards Wide-Spectrum Human Preference Score}, 
+        author={Yuhang Ma and Xiaoshi Wu and Keqiang Sun and Hongsheng Li},
+        year={2025},
+        eprint={2508.03789},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2508.03789}, 
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <!-- The requested paragraph has been removed from here. -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
