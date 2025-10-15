@@ -4,29 +4,29 @@
   <meta charset="utf-8">
   <!-- MODIFICATION: Meta tags for your project. Fill in the content attributes. -->
   <!-- These tags are crucial for search engine optimization (SEO) and how your project appears when shared on social media. -->
-  <meta name="description" content="FLUX-Reason-6M & PRISM-Bench: A Million-Scale Text-to-Image Reasoning Dataset and Comprehensive Benchmark">
-  <meta property="og:title" content="FLUX-Reason-6M & PRISM-Bench"/>
-  <meta property="og:description" content="A million-scale dataset and comprehensive benchmark for advancing text-to-image reasoning in generative models."/>
+  <meta name="description" content="MathCanvas: Intrinsic Visual Chain-of-Thought for Multimodal Mathematical Reasoning">
+  <meta property="og:title" content="MathCanvas"/>
+  <meta property="og:description" content="A comprehensive framework for advancing multimodal mathematical reasoning through intrinsic Visual Chain-of-Thought."/>
   <!-- MODIFICATION: Replace with your website's final URL. -->
-  <meta property="og:url" content="https://flux-reason-6m.github.io/"/>
+  <meta property="og:url" content="https://mathcanvas.github.io/"/>
   <!-- MODIFICATION: Replace with the path to your banner image (1200x630 pixels). -->
-  <meta property="og:image" content="static/images/flux_reason_banner.png" />
+  <meta property="og:image" content="static/images/teaser_v2_crop.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-  <meta name="twitter:title" content="FLUX-Reason-6M & PRISM-Bench">
-  <meta name="twitter:description" content="A million-scale dataset and comprehensive benchmark for advancing text-to-image reasoning in generative models.">
+  <meta name="twitter:title" content="MathCanvas">
+  <meta name="twitter:description" content="A comprehensive framework for advancing multimodal mathematical reasoning through intrinsic Visual Chain-of-Thought.">
   <!-- MODIFICATION: Replace with the path to your Twitter banner image (1200x600 pixels). -->
-  <meta name="twitter:image" content="static/images/flux_reason_twitter_banner.png">
+  <meta name="twitter:image" content="static/images/teaser_v2_crop.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <!-- MODIFICATION: Keywords for your paper to be indexed by search engines. -->
-  <meta name="keywords" content="FLUX-Reason-6M, PRISM-Bench, Text-to-Image Reasoning, Generative Models, Dataset, Benchmark, Computer Vision, Generation Chain-of-Thought">
+  <meta name="keywords" content="MathCanvas, Multimodal Mathematical Reasoning, Visual Chain-of-Thought, VCoT, Multimodal Large Language Models, MLLM, Dataset, Benchmark, Generative Models, Computer Vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- MODIFICATION: Update the title of the webpage. -->
-  <title>FLUX-Reason-6M & PRISM-Bench</title>
+  <title>MathCanvas</title>
   <!-- MODIFICATION: Replace with your project's favicon. -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/logos/mathcanvas.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -105,10 +105,16 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- MODIFICATION: Project title. -->
-            <h1 class="title is-1 publication-title">FLUX-Reason-6M & PRISM-Bench</h1>
-            <h1 class="title is-1 publication-title">A Million-Scale Text-to-Image Reasoning Dataset and Comprehensive Benchmark</h1>
+            <h1 class="title is-1 publication-title is-bold">
+              <img src="static/logos/mathcanvas.png" style="width:4em;vertical-align: middle" alt="Logo" />
+              <span class="mathcanvas" style="vertical-align: middle">MathCanvas</span>
+            </h1>
+            <h1 class="subtitle is-2 publication-subtitle">
+              Intrinsic Visual Chain-of-Thought for Multimodal Mathematical Reasoning
+            </h1>
+
+            <!--
             <div class="is-size-5 publication-authors">
-              <!-- MODIFICATION: Paper authors. Add your author names and links. -->
               <span class="author-block">
                 <a href="https://rongyaofang.github.io/" target="_blank">Rongyao Fang</a><sup>1†</sup>,</span>
                 <span class="author-block">
@@ -119,7 +125,7 @@
                     <a href="https://leonhlj.github.io/" target="_blank">Linjiang Huang</a><sup>3</sup>,</span>
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=ylhI1JsAAAAJ&hl=zh-CN" target="_blank">Shuai Bai</a><sup>4</sup>,</span>
-                  <br> <!-- This tag forces a line break -->
+                  <br>
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=EzYiBeUAAAAJ&hl=en" target="_blank">Yuxuan Cai</a><sup>4</sup>,</span>
                   <span class="author-block">
@@ -134,16 +140,16 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <!-- MODIFICATION: Add your affiliations here. -->
                     <span class="author-block"><sup>1</sup>CUHK&ensp;&ensp; <sup>2</sup>HKU&ensp;&ensp; <sup>3</sup>BUAA&ensp;&ensp; <sup>4</sup>Alibaba&ensp;&ensp; <sup>5</sup>Sensetime</span>
                     <span class="eql-cntrb"><small><br><sup>†</sup>Equal Contribution&ensp;&ensp; <sup>*</sup>Corresponding Author</small></span>
                   </div>
+                  -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- MODIFICATION: Add the link to your paper PDF. -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2509.09680" target="_blank"
+                        <a href="#" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -154,7 +160,7 @@
 
                   <!-- MODIFICATION: Add the link to your GitHub repository. -->
                   <span class="link-block">
-                    <a href="https://github.com/rongyaofang/prism-bench" target="_blank"
+                    <a href="https://github.com/shiwk24/MathCanvas" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -165,7 +171,7 @@
 
                   <!-- MODIFICATION: Add a link to a Huggingface Dataset if applicable. -->
                   <span class="link-block">
-                    <a href="https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M" target="_blank"
+                    <a href="#" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <p>🤗</p>
@@ -187,11 +193,10 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- MODIFICATION: Replace 'teaser.png' with a compelling teaser image for your project. -->
-      <div class="has-text-centered"></div>
-        <img src="static/images/teaser.png" alt="Teaser Image for FLUX-Reason-6M" style="max-width:100%; height:auto;">
+        <img src="static/images/teaser_v2_crop.jpg" alt="Teaser Image" style="max-width:100%; height:auto;">
       <!-- MODIFICATION: A short, engaging subtitle for your project. -->
       <h2 class="subtitle has-text-centered">
-        We introduce <b>FLUX-Reason-6M</b> and <b>PRISM-Bench</b>. FLUX-Reason-6M is a <b>6-million-scale</b> synthesized dataset designed to incorporate reasoning capabilities into the architecture of T2I generation. PRISM-Bench serves as a comprehensive and discriminative benchmark with <b>7 independent tracks</b> that closely align with human judgment.
+        <b>MathCanvas</b> demonstrates the first successful application of <b>intrinsic Visual Chain-of-Thought (VCoT)</b> for complex mathematical reasoning. Prior attempts fail by generating incorrect (BAGEL-Zebra-CoT) or strategically poor (Nano-Banana) visuals, leading to wrong solutions. In contrast, MathCanvas correctly generates an intermediate visual step that unlocks a simpler, elegant solution path.
       </h2>
     </div>
   </div>
@@ -207,7 +212,10 @@
         <div class="content has-text-justified">
           <!-- MODIFICATION: Your paper's abstract goes here. -->
           <p>
-          The advancement of open-source text-to-image (T2I) models has been hindered by the absence of large-scale, reasoning-focused datasets and comprehensive evaluation benchmarks, resulting in a performance gap compared to leading closed-source systems. To address this challenge, We introduce <b>FLUX-Reason-6M</b> and <b>PRISM-Bench</b> (<b>P</b>recise and <b>R</b>obust <b>I</b>mage <b>S</b>ynthesis <b>M</b>easurement <b>Bench</b>mark). FLUX-Reason-6M is a massive dataset consisting of <b>6 million</b> high-quality FLUX-generated images and <b>20 million</b> bilingual (English and Chinese) descriptions specifically designed to teach complex reasoning. The image are organized according to six key characteristics: Imagination, Entity, Text rendering, Style, Affection, and Composition, and design explicit <b>Generation Chain-of-Thought (GCoT)</b> to provide detailed breakdowns of image generation steps. The whole data curation takes <b>four months of computation on 128 A100 GPUs</b>, providing the community with a resource previously unattainable outside of large industrial labs. PRISM-Bench offers a novel evaluation standard with seven distinct tracks, including a formidable Long Text challenge using GCoT. Through carefully designed prompts, it utilizes advanced vision-language models for nuanced human-aligned assessment of prompt-image alignment and image aesthetics. Our extensive evaluation of 19 leading models on PRISM-Bench reveals critical performance gaps and highlights specific areas requiring improvement. Our dataset, benchmark, and evaluation code are released to catalyze the next wave of reasoning-oriented T2I generation.
+          While Large Language Models (LLMs) have excelled in textual reasoning, they struggle with mathematical domains like geometry that intrinsically rely on visual aids. Existing approaches to Visual Chain-of-Thought (VCoT) are often limited by rigid external tools or fail to generate the high-fidelity, strategically-timed diagrams necessary for complex problem-solving. 
+          </p>
+          <p>
+          To bridge this gap, we introduce <b>MathCanvas</b>, a comprehensive framework designed to endow unified Large Multimodal Models (LMMs) with intrinsic VCoT capabilities for mathematics. Our approach consists of two phases. First, a <i>Visual Manipulation</i> stage pre-trains the model on a novel <b>15.2M-pair</b> corpus, comprising 10M caption-to-diagram pairs (MathCanvas-Imagen) and 5.2M step-by-step editing trajectories (MathCanvas-Edit), to master diagram generation and editing. Second, a <i>Strategic Visual-Aided Reasoning</i> stage fine-tunes the model on <b>MathCanvas-Instruct</b>, a new <b>219K-example</b> dataset of interleaved visual-textual reasoning paths, teaching it <i>when</i> and <i>how</i> to leverage visual aids. To facilitate rigorous evaluation, we introduce <b>MathCanvas-Bench</b>, a challenging benchmark with 3K problems that require models to produce interleaved visual-textual solutions. Our model, BAGEL-Canvas, trained under this framework, achieves an <b>86% relative improvement</b> over strong LMM baselines on MathCanvas-Bench, demonstrating excellent generalization to other public math benchmarks. Our work provides a complete toolkit—framework, datasets, and benchmark—to unlock complex, human-like visual-aided reasoning in LMMs.
           </p>
         </div>
       </div>
@@ -226,13 +234,16 @@
         <div class="content has-text-justified">
           <!-- MODIFICATION: List your key contributions here. -->
           <p>
-          <ul>
-            <li><b>FLUX-Reason-6M: A Landmark Dataset.</b> We release the first 6-million-scale T2I dataset engineered for reasoning, featuring 20 million bilingual captions and pioneering generation chain of thought prompts. This dataset is created using 128 A100 GPUs over a 4-month period, aiming to serve as the foundational dataset for the next generation of T2I models.</li>
-            <li><b>PRISM-Bench: A New Standard for Evaluation.</b> We establish a comprehensive, seven-track benchmark that uses GPT-4.1 and Qwen2.5-VL-72B for nuanced and robust evaluation, offering the community a reliable tool to measure models’ true capabilities.</li>
-            <li><b>Actionable Insights from Extensive Benchmarking.</b> Our extensive and rigorous evaluation of leading models reveals the gaps between different models and potential areas for improvement, providing a clear roadmap for future research.</li>
-            <li><b>Democratizing a Revolution in T2I.</b> We publicly release the entire dataset, benchmark, and evaluation suite to lower the financial and computational barriers to entry, enabling researchers worldwide to build and test more capable generative models.</li>
-          </ul>
-          </p>
+  <ul>
+    <li><b>A Novel Framework for Intrinsic VCoT:</b> We propose MathCanvas, a comprehensive, two-stage framework that endows LMMs with the ability to perform intrinsic VCoT for complex mathematical reasoning. 
+
+    <li><b>Massive Datasets for Visual Mathematical Reasoning:</b> We construct two large-scale corpora tailored for our two-phase approach: a 15.2M-pair pretraining dataset for Visual Manipulation, and a 219K-example fine-tuning dataset for Strategic Visual-Aided Reasoning.</li>
+
+    <li><b>MathCanvas-Bench: A New Standard for Evaluation:</b> To drive future research, we introduce MathCanvas-Bench, a challenging new benchmark with 3K problems that specifically require models to generate interleaved visual and textual solutions. Our evaluation of 20 leading LMMs on this benchmark establishes a rigorous testbed for this new capability.</li>
+
+    <li><b>State-of-the-Art Performance and Generalization:</b> Experiments show that our model trained under the MathCanvas framework achieves a 86% relative improvement over strong baselines on our benchmark. Furthermore, it shows excellent generalization to other public math benchmarks, proving a fundamental enhancement of its core reasoning abilities.</li>
+  </ul>
+</p>
         </div>
       </div>
     </div>
@@ -240,237 +251,646 @@
 </section>
 <!-- End Contributions -->
 
-<!-- START: New PRISM-Bench Leaderboard Section -->
+<!-- START: MathCanvas-Bench Leaderboard Section -->
 <section class="section" id="leaderboard">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Official Leaderboard</h2>
-    <div class="content">
-            <p class="has-text-centered">🚨 To submit your results to the leaderboard, please send to <a href="mailto:aldrichyu888@gmail.com">this email</a>.</p>
+  
+  <!-- Custom Styles for the Leaderboard -->
+  <style>
+    .text-red-highlight {
+      color: #D92323; /* A strong, clear red */
+      font-weight: bold;
+    }
+  </style>
 
-    <!-- Tab navigation -->
-    <div class="tabs is-centered is-boxed">
-      <ul id="leaderboard-tabs">
-        <li class="is-active" data-tab="1"><a>PRISM-Bench (GPT4.1)</a></li>
-        <li data-tab="2"><a>PRISM-Bench (Qwen2.5-VL)</a></li>
-        <li data-tab="3"><a>PRISM-Bench-ZH (GPT4.1)</a></li>
-        <li data-tab="4"><a>PRISM-Bench-ZH (Qwen2.5-VL)</a></li>
-      </ul>
+  <div class="container">
+    <div class="columns is-centered">
+    <div class="column is-full has-text-centered content">
+    <h2 class="title is-3 has-text-centered">MathCanvas-Bench Leaderboard</h2>
+    <div class="content">
+      <p class="has-text-centered">
+        🚨 The results are evaluated on the <b>MathCanvas-Bench</b>. To submit your model, please send the results to <a href="mailto:shiweikang20@gmail.com">this email</a>.
+      </p>
     </div>
 
     <!-- Leaderboard Content -->
-    <div>
-      <!-- Leaderboard 1: PRISM-Bench (GPT4.1) -->
-      <div id="leaderboard-tab-1" class="leaderboard-content is-active">
-        <div class="table-container">
-          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth leaderboard-table">
-            <thead>
-              <tr>
-                <th rowspan="2">#</th>
-                <th rowspan="2">Model</th>
-                <th rowspan="2">Source</th>
-                <th rowspan="2">Date</th>
-                <th colspan="3">Overall</th>
-                <th colspan="3">Imagination</th>
-                <th colspan="3">Entity</th>
-                <th colspan="3">Text rendering</th>
-                <th colspan="3">Style</th>
-                <th colspan="3">Affection</th>
-                <th colspan="3">Composition</th>
-                <th colspan="3">Long text</th>
-              </tr>
-              <tr>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td class="model-cell gold">GPT-Image-1 [High] 🥇</td><td><a href="https://platform.openai.com/docs/guides/image-generation?image-generation-model=gpt-image-1">Link</a></td><td>2025-09-10</td><td>86.9</td><td>85.6</td><td class="gold"><b>86.3</b></td><td>86.2</td><td>86.6</td><td>86.4</td><td>90.0</td><td>86.3</td><td>88.2</td><td>68.8</td><td>80.1</td><td>74.5</td><td>92.8</td><td>93.3</td><td>93.1</td><td>90.7</td><td>90.9</td><td>90.8</td><td>96.2</td><td>89.4</td><td>92.8</td><td>83.8</td><td>72.8</td><td>78.3</td></tr>
-              <tr><td>2</td><td class="model-cell silver">Gemini2.5-Flash-Image 🥈</td><td><a href="https://deepmind.google/models/gemini/image/">Link</a></td><td>2025-09-10</td><td>87.1</td><td>83.4</td><td class="silver"><b>85.3</b></td><td>92.4</td><td>84.8</td><td>88.6</td><td>87.0</td><td>81.3</td><td>84.2</td><td>65.2</td><td>74.1</td><td>69.7</td><td>90.5</td><td>90.8</td><td>90.7</td><td>96.0</td><td>88.2</td><td>92.1</td><td>92.5</td><td>88.5</td><td>90.5</td><td>85.9</td><td>76.2</td><td>81.1</td></tr>
-              <tr><td>3</td><td class="model-cell bronze">Qwen-Image 🥉</td><td><a href="https://huggingface.co/Qwen/Qwen-Image">Link</a></td><td>2025-09-10</td><td>81.1</td><td>78.6</td><td class="bronze"><b>79.9</b></td><td>80.5</td><td>78.6</td><td>79.6</td><td>79.3</td><td>73.2</td><td>76.3</td><td>54.3</td><td>68.9</td><td>61.6</td><td>84.5</td><td>88.7</td><td>86.6</td><td>91.6</td><td>89.1</td><td>90.4</td><td>93.7</td><td>86.9</td><td>90.3</td><td>83.8</td><td>65.1</td><td>74.5</td></tr>
-              <tr><td>4</td><td class="model-cell">SEEDream 3.0</td><td><a href="https://seed.bytedance.com/zh/tech/seedream3_0">Link</a></td><td>2025-09-10</td><td>80.5</td><td>78.7</td><td><b>79.6</b></td><td>77.3</td><td>76.4</td><td>76.9</td><td>80.2</td><td>73.8</td><td>77.0</td><td>56.1</td><td>70.2</td><td>63.2</td><td>83.9</td><td>87.4</td><td>85.7</td><td>89.3</td><td>90.3</td><td>89.8</td><td>93.3</td><td>86.3</td><td>89.8</td><td>83.2</td><td>66.7</td><td>75.0</td></tr>
-              <tr><td>5</td><td class="model-cell">HiDream-I1-Full</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Full">Link</a></td><td>2025-09-10</td><td>76.1</td><td>75.6</td><td><b>75.9</b></td><td>74.4</td><td>75.6</td><td>75.0</td><td>74.4</td><td>72.4</td><td>73.4</td><td>58.2</td><td>70.4</td><td>64.3</td><td>81.4</td><td>84.8</td><td>83.1</td><td>90.1</td><td>88.8</td><td>89.5</td><td>90.1</td><td>85.4</td><td>87.8</td><td>63.8</td><td>52.0</td><td>57.9</td></tr>
-              <tr><td>6</td><td class="model-cell">FLUX.1-Krea-dev</td><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev">Link</a></td><td>2025-09-10</td><td>74.3</td><td>75.1</td><td><b>74.7</b></td><td>71.5</td><td>73.0</td><td>72.3</td><td>69.5</td><td>67.5</td><td>68.5</td><td>47.5</td><td>61.3</td><td>54.4</td><td>80.8</td><td>83.5</td><td>82.2</td><td>84.0</td><td>90.3</td><td>87.2</td><td>90.9</td><td>85.8</td><td>88.4</td><td>76.2</td><td>64.1</td><td>70.2</td></tr>
-              <tr><td>7</td><td class="model-cell">FLUX.1-dev</td><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">Link</a></td><td>2025-09-10</td><td>72.4</td><td>74.9</td><td><b>73.7</b></td><td>68.1</td><td>74.0</td><td>71.1</td><td>70.7</td><td>71.2</td><td>71.0</td><td>48.1</td><td>64.5</td><td>56.3</td><td>72.3</td><td>80.5</td><td>76.4</td><td>88.3</td><td>91.1</td><td>89.7</td><td>89.0</td><td>84.6</td><td>86.8</td><td>70.6</td><td>58.5</td><td>64.6</td></tr>
-              <tr><td>8</td><td class="model-cell">SD3.5-Large</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large">Link</a></td><td>2025-09-10</td><td>73.9</td><td>73.5</td><td><b>73.7</b></td><td>73.3</td><td>71.2</td><td>72.3</td><td>76.7</td><td>71.9</td><td>74.3</td><td>52.0</td><td>65.8</td><td>58.9</td><td>77.1</td><td>84.2</td><td>80.7</td><td>87.1</td><td>85.2</td><td>86.2</td><td>87.0</td><td>84.7</td><td>85.9</td><td>64.3</td><td>51.7</td><td>58.0</td></tr>
-              <tr><td>9</td><td class="model-cell">HiDream-I1-Dev</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Dev">Link</a></td><td>2025-09-10</td><td>70.3</td><td>70.0</td><td><b>70.2</b></td><td>68.2</td><td>69.7</td><td>69.0</td><td>72.0</td><td>67.0</td><td>69.5</td><td>53.4</td><td>64.1</td><td>58.8</td><td>68.7</td><td>78.6</td><td>73.7</td><td>84.2</td><td>83.1</td><td>83.7</td><td>87.6</td><td>79.8</td><td>83.7</td><td>58.1</td><td>47.5</td><td>52.8</td></tr>
-              <tr><td>10</td><td class="model-cell">SD3.5-Medium</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">Link</a></td><td>2025-09-10</td><td>70.1</td><td>68.9</td><td><b>69.5</b></td><td>69.5</td><td>73.0</td><td>71.3</td><td>72.8</td><td>63.7</td><td>68.3</td><td>33.3</td><td>50.1</td><td>41.7</td><td>77.4</td><td>80.3</td><td>78.9</td><td>84.9</td><td>85.5</td><td>85.2</td><td>89.4</td><td>79.2</td><td>84.3</td><td>63.3</td><td>50.5</td><td>56.9</td></tr>
-              <tr><td>11</td><td class="model-cell">SD3-Medium</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3-medium">Link</a></td><td>2025-09-10</td><td>65.6</td><td>65.2</td><td><b>65.4</b></td><td>61.0</td><td>65.6</td><td>63.3</td><td>64.8</td><td>56.3</td><td>60.6</td><td>32.8</td><td>53.1</td><td>43.0</td><td>74.8</td><td>75.6</td><td>75.2</td><td>78.7</td><td>80.3</td><td>79.5</td><td>85.5</td><td>79.1</td><td>82.3</td><td>61.5</td><td>46.1</td><td>53.8</td></tr>
-              <tr><td>12</td><td class="model-cell">Bagel-CoT</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>65.4</td><td>65.0</td><td><b>65.2</b></td><td>68.4</td><td>74.2</td><td>71.3</td><td>62.4</td><td>60.0</td><td>61.2</td><td>23.2</td><td>40.1</td><td>31.7</td><td>64.4</td><td>70.1</td><td>67.3</td><td>87.1</td><td>80.5</td><td>83.8</td><td>88.5</td><td>77.9</td><td>83.2</td><td>64.0</td><td>52.0</td><td>58.0</td></tr>
-              <tr><td>13</td><td class="model-cell">Bagel</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>66.7</td><td>63.4</td><td><b>65.1</b></td><td>69.4</td><td>68.0</td><td>68.7</td><td>59.0</td><td>50.1</td><td>54.6</td><td>30.2</td><td>44.5</td><td>37.4</td><td>67.9</td><td>71.3</td><td>69.6</td><td>81.7</td><td>81.4</td><td>81.6</td><td>90.5</td><td>73.1</td><td>81.8</td><td>68.1</td><td>55.3</td><td>61.7</td></tr>
-              <tr><td>14</td><td class="model-cell">FLUX.1-schnell</td><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">Link</a></td><td>2025-09-10</td><td>67.1</td><td>61.2</td><td><b>64.2</b></td><td>63.3</td><td>66.2</td><td>64.8</td><td>61.8</td><td>51.2</td><td>56.5</td><td>46.2</td><td>54.1</td><td>50.2</td><td>68.6</td><td>70.1</td><td>69.4</td><td>75.4</td><td>69.9</td><td>72.7</td><td>85.1</td><td>67.5</td><td>76.3</td><td>69.4</td><td>49.7</td><td>59.6</td></tr>
-              <tr><td>15</td><td class="model-cell">Playground</td><td><a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">Link</a></td><td>2025-09-10</td><td>62.6</td><td>65.6</td><td><b>64.1</b></td><td>62.3</td><td>70.6</td><td>66.5</td><td>72.5</td><td>69.1</td><td>70.8</td><td>10.4</td><td>37.3</td><td>23.9</td><td>77.3</td><td>80.9</td><td>79.1</td><td>91.8</td><td>83.8</td><td>87.8</td><td>77.5</td><td>76.5</td><td>77.0</td><td>46.7</td><td>41.0</td><td>43.9</td></tr>
-              <tr><td>16</td><td class="model-cell">JanusPro-7B</td><td><a href="https://huggingface.co/deepseek-ai/Janus-Pro-7B">Link</a></td><td>2025-09-10</td><td>64.2</td><td>57.2</td><td><b>60.7</b></td><td>70.4</td><td>65.8</td><td>68.1</td><td>67.1</td><td>51.9</td><td>59.5</td><td>15.5</td><td>36.7</td><td>26.1</td><td>71.4</td><td>73.8</td><td>72.6</td><td>79.2</td><td>71.5</td><td>75.4</td><td>83.7</td><td>61.0</td><td>72.4</td><td>62.4</td><td>39.7</td><td>51.1</td></tr>
-              <tr><td>17</td><td class="model-cell">SDXL</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">Link</a></td><td>2025-09-10</td><td>58.9</td><td>61.8</td><td><b>60.4</b></td><td>55.3</td><td>61.1</td><td>58.2</td><td>72.5</td><td>67.4</td><td>70.0</td><td>13.8</td><td>37.0</td><td>25.4</td><td>72.4</td><td>75.4</td><td>73.9</td><td>78.9</td><td>77.1</td><td>78.0</td><td>75.5</td><td>75.3</td><td>75.4</td><td>44.2</td><td>39.6</td><td>41.9</td></tr>
-              <tr><td>18</td><td class="model-cell">SD2.1</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-2-1">Link</a></td><td>2025-09-10</td><td>50.7</td><td>45.3</td><td><b>48.0</b></td><td>47.9</td><td>41.2</td><td>44.6</td><td>60.9</td><td>46.7</td><td>53.8</td><td>11.2</td><td>30.6</td><td>20.9</td><td>62.7</td><td>58.6</td><td>60.7</td><td>66.7</td><td>58.5</td><td>62.6</td><td>65.7</td><td>53.1</td><td>59.4</td><td>40.1</td><td>28.2</td><td>34.2</td></tr>
-              <tr><td>19</td><td class="model-cell">SD1.5</td><td><a href="https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5">Link</a></td><td>2025-09-10</td><td>44.9</td><td>43.5</td><td><b>44.2</b></td><td>36.6</td><td>36.1</td><td>36.4</td><td>53.8</td><td>41.1</td><td>47.5</td><td>8.0</td><td>33.1</td><td>20.6</td><td>55.3</td><td>55.3</td><td>55.3</td><td>64.4</td><td>57.5</td><td>61.0</td><td>61.1</td><td>51.0</td><td>56.1</td><td>35.3</td><td>30.4</td><td>32.9</td></tr>
-            </tbody>
-          </table>
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth leaderboard-table">
+        <thead>
+          <tr>
+            <th rowspan="2">#</th>
+            <th rowspan="2">Model</th>
+            <th rowspan="2">Source</th>
+            <th rowspan="2">Date</th>
+            <th rowspan="2">Type</th>
+            <th rowspan="2">Think</th>
+            <th colspan="2">Overall</th>
+            <th rowspan="2">Algebra</th>
+            <th rowspan="2">Analytic<br>Geom.</th>
+            <th rowspan="2">Calc &<br>Vector</th>
+            <th rowspan="2">Plane<br>Geom.</th>
+            <th rowspan="2">Solid<br>Geom.</th>
+            <th rowspan="2">Stats.</th>
+            <th rowspan="2">Transf.<br>Geom.</th>
+            <th rowspan="2">Trig.</th>
+          </tr>
+          <tr>
+            <th>Complete</th>
+            <th>Weighted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data is sorted by Overall-Weighted score -->
+          <tr>
+            <td>1</td>
+            <td><span class="text-red-highlight">Gemini-2.5-Pro 🥇</span></td>
+            <td><a href="https://deepmind.google/models/gemini/pro/" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>47.9</td>
+            <td><span class="text-red-highlight">58.2</span></td>
+            <td>68.0</td>
+            <td>59.2</td>
+            <td>60.2</td>
+            <td>54.8</td>
+            <td>48.7</td>
+            <td>64.5</td>
+            <td>58.5</td>
+            <td>69.9</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><span class="text-red-highlight">Seed-1.6-Thinking 🥈</span></td>
+            <td><a href="https://seed.bytedance.com/en/seed1_6" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>44.1</td>
+            <td><span class="text-red-highlight">55.2</span></td>
+            <td>67.7</td>
+            <td>57.5</td>
+            <td>55.9</td>
+            <td>52.2</td>
+            <td>45.0</td>
+            <td>65.1</td>
+            <td>56.8</td>
+            <td>60.7</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><span class="text-red-highlight">Qwen3-VL-Plus 🥉</span></td>
+            <td><a href="https://github.com/QwenLM/Qwen3-VL" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>40.9</td>
+            <td>51.5</td>
+            <td>67.0</td>
+            <td>54.6</td>
+            <td>56.9</td>
+            <td>45.9</td>
+            <td>42.0</td>
+            <td>66.7</td>
+            <td>49.3</td>
+            <td>58.9</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>GPT-5</td>
+            <td><a href="https://openai.com/gpt-5/" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>43.5</td>
+            <td>51.4</td>
+            <td>68.7</td>
+            <td>55.5</td>
+            <td>64.2</td>
+            <td>45.6</td>
+            <td>36.1</td>
+            <td>64.5</td>
+            <td>42.7</td>
+            <td>66.5</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Gemini-2.5-Flash</td>
+            <td><a href="https://deepmind.google/models/gemini/flash/" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>39.3</td>
+            <td>49.5</td>
+            <td>63.2</td>
+            <td>56.5</td>
+            <td>54.6</td>
+            <td>40.7</td>
+            <td>40.7</td>
+            <td>61.1</td>
+            <td>46.8</td>
+            <td>64.6</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>GLM-4.5V</td>
+            <td><a href="https://huggingface.co/zai-org/GLM-4.5V" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>35.6</td>
+            <td>47.8</td>
+            <td>56.9</td>
+            <td>48.8</td>
+            <td>53.4</td>
+            <td>44.1</td>
+            <td>39.2</td>
+            <td>56.4</td>
+            <td>45.8</td>
+            <td>59.8</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Nano-Banana</td>
+            <td><a href="https://aistudio.google.com/models/gemini-2-5-flash-image" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>ULMM</td>
+            <td>✗</td>
+            <td>33.2</td>
+            <td>43.7</td>
+            <td>55.4</td>
+            <td>50.2</td>
+            <td>51.8</td>
+            <td>34.5</td>
+            <td>36.6</td>
+            <td>56.7</td>
+            <td>39.4</td>
+            <td>60.4</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Claude-Sonnet-4</td>
+            <td><a href="https://www.anthropic.com/news/claude-4" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>25.0</td>
+            <td>37.8</td>
+            <td>44.8</td>
+            <td>38.9</td>
+            <td>49.3</td>
+            <td>33.8</td>
+            <td>33.0</td>
+            <td>46.9</td>
+            <td>30.3</td>
+            <td>47.6</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>BAGEL-Canvas</td>
+            <td><a href="https://mathcanvas.github.io/" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>ULMM</td>
+            <td>✗</td>
+            <td>21.9</td>
+            <td>34.4</td>
+            <td>29.9</td>
+            <td>27.2</td>
+            <td>17.9</td>
+            <td>40.0</td>
+            <td>35.3</td>
+            <td>23.2</td>
+            <td>29.3</td>
+            <td>40.4</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Qwen-2.5-VL-72B</td>
+            <td><a href="https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>21.1</td>
+            <td>32.8</td>
+            <td>30.6</td>
+            <td>19.5</td>
+            <td>36.4</td>
+            <td>34.5</td>
+            <td>33.5</td>
+            <td>23.9</td>
+            <td>33.6</td>
+            <td>48.9</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Gemini-2.0-Flash</td>
+            <td><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-0-flash" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>21.2</td>
+            <td>32.6</td>
+            <td>39.1</td>
+            <td>32.6</td>
+            <td>38.9</td>
+            <td>31.1</td>
+            <td>25.6</td>
+            <td>51.4</td>
+            <td>28.1</td>
+            <td>38.0</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>GPT-4.1</td>
+            <td><a href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>19.0</td>
+            <td>30.0</td>
+            <td>40.4</td>
+            <td>30.7</td>
+            <td>37.1</td>
+            <td>24.1</td>
+            <td>25.1</td>
+            <td>54.0</td>
+            <td>21.5</td>
+            <td>42.5</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Qwen-2.5-VL-32B</td>
+            <td><a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>15.4</td>
+            <td>27.6</td>
+            <td>29.8</td>
+            <td>27.4</td>
+            <td>27.8</td>
+            <td>27.4</td>
+            <td>27.2</td>
+            <td>27.9</td>
+            <td>20.1</td>
+            <td>30.5</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Keye-VL-1.5-8B</td>
+            <td><a href="https://huggingface.co/Kwai-Keye/Keye-VL-1_5-8B" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✓</td>
+            <td>17.1</td>
+            <td>27.0</td>
+            <td>33.1</td>
+            <td>28.0</td>
+            <td>26.2</td>
+            <td>27.0</td>
+            <td>23.6</td>
+            <td>29.5</td>
+            <td>20.9</td>
+            <td>26.3</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Gemma-3-27b-it</td>
+            <td><a href="https://huggingface.co/google/gemma-3-27b-it" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>15.8</td>
+            <td>26.6</td>
+            <td>31.3</td>
+            <td>28.4</td>
+            <td>34.4</td>
+            <td>25.8</td>
+            <td>21.0</td>
+            <td>40.0</td>
+            <td>21.0</td>
+            <td>26.9</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>InternVL3.5-8B</td>
+            <td><a href="https://huggingface.co/OpenGVLab/InternVL3_5-8B" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>16.7</td>
+            <td>26.4</td>
+            <td>32.3</td>
+            <td>33.8</td>
+            <td>33.8</td>
+            <td>24.2</td>
+            <td>26.9</td>
+            <td>43.7</td>
+            <td>16.2</td>
+            <td>14.9</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>GPT-4.1-mini</td>
+            <td><a href="https://platform.openai.com/docs/models/gpt-4.1-mini" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>14.6</td>
+            <td>26.3</td>
+            <td>35.7</td>
+            <td>30.5</td>
+            <td>36.5</td>
+            <td>22.0</td>
+            <td>22.4</td>
+            <td>24.8</td>
+            <td>19.7</td>
+            <td>30.3</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>InternVL3.5-30B-A3B</td>
+            <td><a href="https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>11.7</td>
+            <td>22.2</td>
+            <td>22.2</td>
+            <td>19.9</td>
+            <td>15.1</td>
+            <td>24.9</td>
+            <td>24.3</td>
+            <td>22.1</td>
+            <td>17.4</td>
+            <td>18.4</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>GPT-4o</td>
+            <td><a href="https://platform.openai.com/docs/models/gpt-4o" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>9.9</td>
+            <td>19.4</td>
+            <td>21.6</td>
+            <td>17.7</td>
+            <td>21.8</td>
+            <td>19.5</td>
+            <td>18.6</td>
+            <td>17.4</td>
+            <td>13.2</td>
+            <td>23.0</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Qwen-2.5-VL-7B</td>
+            <td><a href="https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>LMM</td>
+            <td>✗</td>
+            <td>8.9</td>
+            <td>18.7</td>
+            <td>19.5</td>
+            <td>19.0</td>
+            <td>19.2</td>
+            <td>20.6</td>
+            <td>18.7</td>
+            <td>10.7</td>
+            <td>13.9</td>
+            <td>15.0</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>BAGEL</td>
+            <td><a href="https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>ULMM</td>
+            <td>✗</td>
+            <td>8.3</td>
+            <td>18.5</td>
+            <td>18.1</td>
+            <td>13.1</td>
+            <td>17.1</td>
+            <td>20.8</td>
+            <td>23.0</td>
+            <td>10.9</td>
+            <td>19.4</td>
+            <td>13.3</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>BAGEL-Zebra-CoT</td>
+            <td><a href="https://huggingface.co/multimodal-reasoning-lab/Bagel-Zebra-CoT" target="_blank">Link</a></td>
+            <td>2025-10-17</td>
+            <td>ULMM</td>
+            <td>✗</td>
+            <td>8.0</td>
+            <td>16.6</td>
+            <td>18.0</td>
+            <td>15.1</td>
+            <td>15.6</td>
+            <td>18.0</td>
+            <td>16.8</td>
+            <td>20.8</td>
+            <td>11.1</td>
+            <td>14.1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    The compared math subjects are: Algebra, Analytic Geometry, Calculus & Vector, Plane Geometry, Solid Geometry, Statistics, Transformational Geometry, and Trigonometry.
+    </div>
+    </div>
+  </div>
+</section>
+<!-- END: MathCanvas-Bench Leaderboard Section -->
+
+
+
+<!-- START: MathCanvas-Bench Section -->
+
+<!-- Gray banner for the main section title -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathcanvas">
+      <span class="mathcanvas" style="vertical-align: middle">MathCanvas-Bench</span>
+    </h1>
+  </div>
+</section>
+
+<!-- White content area for all subsections -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Subsection: Statistics -->
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h2 class="title is-3">Statistics</h2>
+        <div class="content mt-4">
+            <img src="static/images/benchmark_statistics_v1_crop.jpg" alt="Statistical charts for MathCanvas-Bench" width="100%" />
+          <p class="mt-4">
+            Statistical analysis of MathCanvas-Bench.<br>
+            <b>Left:</b> Knowledge types distribution.<br>
+            <b>Middle:</b> Distribution of questions and solutions containing varying numbers of images.<br>
+            <b>Right:</b> Text length distribution of questions and solutions (measured in text tokens).
+          </p>
         </div>
       </div>
+    </div>
 
-      <!-- Leaderboard 2: PRISM-Bench (Qwen2.5-VL) -->
-      <div id="leaderboard-tab-2" class="leaderboard-content">
-        <div class="table-container">
-          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth leaderboard-table">
-            <thead>
-              <tr>
-                <th rowspan="2">#</th>
-                <th rowspan="2">Model</th>
-                <th rowspan="2">Source</th>
-                <th rowspan="2">Date</th>
-                <th colspan="3">Overall</th>
-                <th colspan="3">Imagination</th>
-                <th colspan="3">Entity</th>
-                <th colspan="3">Text rendering</th>
-                <th colspan="3">Style</th>
-                <th colspan="3">Affection</th>
-                <th colspan="3">Composition</th>
-                <th colspan="3">Long text</th>
-              </tr>
-              <tr>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td class="model-cell gold">GPT-Image-1 [High] 🥇</td><td><a href="https://platform.openai.com/docs/guides/image-generation?image-generation-model=gpt-image-1">Link</a></td><td>2025-09-10</td><td>82.7</td><td>78.7</td><td class="gold"><b>80.7</b></td><td>79.8</td><td>53.3</td><td>66.6</td><td>87.3</td><td>81.0</td><td>84.1</td><td>66.7</td><td>86.8</td><td>76.8</td><td>87.3</td><td>87.8</td><td>87.5</td><td>88.1</td><td>79.8</td><td>84.0</td><td>92.2</td><td>84.9</td><td>88.5</td><td>77.2</td><td>77.5</td><td>77.4</td></tr>
-              <tr><td>2</td><td class="model-cell silver">Gemini2.5-Flash-Image 🥈</td><td><a href="https://deepmind.google/models/gemini/image/">Link</a></td><td>2025-09-10</td><td>85.0</td><td>75.8</td><td class="silver"><b>80.4</b></td><td>84.7</td><td>38.1</td><td>61.4</td><td>86.0</td><td>76.7</td><td>81.3</td><td>72.8</td><td>84.3</td><td>78.5</td><td>89.5</td><td>87.8</td><td>88.6</td><td>94.3</td><td>74.8</td><td>84.5</td><td>91.2</td><td>88.2</td><td>89.7</td><td>76.3</td><td>80.6</td><td>78.4</td></tr>
-              <tr><td>3</td><td class="model-cell bronze">SEEDream 3.0 🥉</td><td><a href="https://seed.bytedance.com/zh/tech/seedream3_0">Link</a></td><td>2025-09-10</td><td>80.1</td><td>72.3</td><td class="bronze"><b>76.2</b></td><td>75.8</td><td>38.0</td><td>56.9</td><td>81.3</td><td>74.2</td><td>77.7</td><td>58.8</td><td>74.0</td><td>66.4</td><td>84.4</td><td>84.1</td><td>84.2</td><td>90.5</td><td>74.6</td><td>82.5</td><td>93.6</td><td>85.1</td><td>89.3</td><td>76.2</td><td>76.4</td><td>76.3</td></tr>
-              <tr><td>4</td><td class="model-cell">Qwen-Image</td><td><a href="https://huggingface.co/Qwen/Qwen-Image">Link</a></td><td>2025-09-10</td><td>80.0</td><td>68.3</td><td><b>74.1</b></td><td>75.5</td><td>37.4</td><td>56.5</td><td>79.5</td><td>64.5</td><td>72.0</td><td>57.9</td><td>71.2</td><td>64.5</td><td>86.6</td><td>84.4</td><td>85.5</td><td>89.9</td><td>70.4</td><td>80.1</td><td>93.9</td><td>79.5</td><td>86.7</td><td>76.8</td><td>70.9</td><td>73.8</td></tr>
-              <tr><td>5</td><td class="model-cell">FLUX.1-Krea-dev</td><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev">Link</a></td><td>2025-09-10</td><td>74.4</td><td>73.7</td><td><b>74.0</b></td><td>69.6</td><td>43.1</td><td>56.3</td><td>72.2</td><td>70.7</td><td>71.4</td><td>51.7</td><td>76.1</td><td>63.9</td><td>80.0</td><td>86.6</td><td>83.3</td><td>82.6</td><td>78.7</td><td>80.6</td><td>90.8</td><td>87.1</td><td>88.9</td><td>73.6</td><td>73.4</td><td>73.5</td></tr>
-              <tr><td>6</td><td class="model-cell">HiDream-I1-Full</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Full">Link</a></td><td>2025-09-10</td><td>76.6</td><td>68.6</td><td><b>72.6</b></td><td>73.0</td><td>44.0</td><td>58.5</td><td>76.3</td><td>72.8</td><td>74.5</td><td>60.5</td><td>76.4</td><td>68.4</td><td>81.4</td><td>81.5</td><td>81.4</td><td>90.0</td><td>76.6</td><td>83.3</td><td>88.5</td><td>80.3</td><td>84.4</td><td>66.3</td><td>48.6</td><td>57.4</td></tr>
-              <tr><td>7</td><td class="model-cell">SD3.5-Large</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-large">Link</a></td><td>2025-09-10</td><td>73.4</td><td>67.8</td><td><b>70.6</b></td><td>66.7</td><td>43.4</td><td>55.0</td><td>76.8</td><td>72.7</td><td>74.8</td><td>53.6</td><td>73.1</td><td>63.3</td><td>77.3</td><td>78.2</td><td>77.7</td><td>85.6</td><td>73.9</td><td>79.7</td><td>87.8</td><td>80.9</td><td>84.3</td><td>65.8</td><td>52.2</td><td>59.0</td></tr>
-              <tr><td>8</td><td class="model-cell">HiDream-I1-Dev</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Dev">Link</a></td><td>2025-09-10</td><td>72.3</td><td>67.0</td><td><b>69.6</b></td><td>68.8</td><td>45.8</td><td>57.3</td><td>73.5</td><td>68.1</td><td>70.8</td><td>56.7</td><td>75.7</td><td>66.2</td><td>70.2</td><td>77.4</td><td>73.8</td><td>88.2</td><td>74.3</td><td>81.2</td><td>84.7</td><td>78.5</td><td>81.6</td><td>64.0</td><td>49.3</td><td>56.6</td></tr>
-              <tr><td>9</td><td class="model-cell">FLUX.1-dev</td><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-dev">Link</a></td><td>2025-09-10</td><td>72.1</td><td>64.9</td><td><b>68.5</b></td><td>65.5</td><td>42.9</td><td>54.2</td><td>70.6</td><td>61.9</td><td>66.2</td><td>52.3</td><td>73.0</td><td>62.6</td><td>72.6</td><td>74.2</td><td>73.4</td><td>86.0</td><td>72.9</td><td>79.4</td><td>87.4</td><td>75.8</td><td>81.6</td><td>70.5</td><td>53.8</td><td>62.1</td></tr>
-              <tr><td>10</td><td class="model-cell">SD3.5-Medium</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3.5-medium">Link</a></td><td>2025-09-10</td><td>68.6</td><td>65.1</td><td><b>66.8</b></td><td>65.1</td><td>34.7</td><td>49.9</td><td>72.5</td><td>70.9</td><td>71.7</td><td>36.6</td><td>64.5</td><td>50.5</td><td>75.5</td><td>80.0</td><td>77.7</td><td>81.8</td><td>73.9</td><td>77.9</td><td>85.4</td><td>81.0</td><td>83.2</td><td>63.5</td><td>50.6</td><td>57.0</td></tr>
-              <tr><td>11</td><td class="model-cell">SD3-Medium</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-3-medium">Link</a></td><td>2025-09-10</td><td>68.0</td><td>64.2</td><td><b>66.1</b></td><td>64.3</td><td>37.7</td><td>51.0</td><td>69.4</td><td>63.3</td><td>66.3</td><td>38.5</td><td>63.3</td><td>50.9</td><td>74.6</td><td>79.5</td><td>77.0</td><td>80.5</td><td>75.5</td><td>78.0</td><td>85.6</td><td>79.5</td><td>82.5</td><td>63.4</td><td>50.3</td><td>56.8</td></tr>
-              <tr><td>12</td><td class="model-cell">FLUX.1-schnell</td><td><a href="https://huggingface.co/black-forest-labs/FLUX.1-schnell">Link</a></td><td>2025-09-10</td><td>68.3</td><td>61.1</td><td><b>64.7</b></td><td>62.8</td><td>35.6</td><td>49.2</td><td>64.8</td><td>56.8</td><td>60.8</td><td>54.3</td><td>68.1</td><td>61.2</td><td>70.3</td><td>71.5</td><td>70.9</td><td>75.4</td><td>65.9</td><td>70.6</td><td>81.7</td><td>75.6</td><td>78.6</td><td>68.7</td><td>54.4</td><td>61.5</td></tr>
-              <tr><td>13</td><td class="model-cell">JanusPro-7B</td><td><a href="https://huggingface.co/deepseek-ai/Janus-Pro-7B">Link</a></td><td>2025-09-10</td><td>64.9</td><td>59.4</td><td><b>62.1</b></td><td>65.0</td><td>38.8</td><td>51.9</td><td>68.6</td><td>63.5</td><td>66.0</td><td>23.1</td><td>50.3</td><td>36.7</td><td>70.7</td><td>75.2</td><td>72.9</td><td>80.7</td><td>68.0</td><td>74.3</td><td>82.4</td><td>71.1</td><td>76.7</td><td>63.9</td><td>49.0</td><td>56.4</td></tr>
-              <tr><td>14</td><td class="model-cell">Bagel-CoT</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>67.5</td><td>56.5</td><td><b>62.0</b></td><td>68.0</td><td>44.1</td><td>56.0</td><td>67.6</td><td>53.4</td><td>60.5</td><td>29.4</td><td>42.3</td><td>35.8</td><td>69.0</td><td>69.7</td><td>69.3</td><td>87.1</td><td>66.7</td><td>76.9</td><td>86.6</td><td>69.2</td><td>77.9</td><td>64.5</td><td>50.2</td><td>57.3</td></tr>
-              <tr><td>15</td><td class="model-cell">Bagel</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>67.5</td><td>56.6</td><td><b>62.0</b></td><td>68.0</td><td>45.0</td><td>56.5</td><td>67.6</td><td>53.4</td><td>60.5</td><td>29.4</td><td>42.3</td><td>35.8</td><td>69.0</td><td>69.7</td><td>69.3</td><td>87.1</td><td>66.7</td><td>76.9</td><td>86.6</td><td>69.2</td><td>77.9</td><td>64.5</td><td>50.2</td><td>57.3</td></tr>
-              <tr><td>16</td><td class="model-cell">Playground</td><td><a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">Link</a></td><td>2025-09-10</td><td>62.2</td><td>52.1</td><td><b>57.1</b></td><td>59.0</td><td>39.0</td><td>49.0</td><td>69.4</td><td>56.7</td><td>63.0</td><td>15.3</td><td>31.9</td><td>23.6</td><td>74.6</td><td>74.6</td><td>74.6</td><td>88.8</td><td>66.0</td><td>77.4</td><td>72.2</td><td>61.3</td><td>66.7</td><td>56.0</td><td>35.3</td><td>45.6</td></tr>
-              <tr><td>17</td><td class="model-cell">SDXL</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">Link</a></td><td>2025-09-10</td><td>60.1</td><td>54.0</td><td><b>57.0</b></td><td>54.5</td><td>34.1</td><td>44.3</td><td>71.1</td><td>65.0</td><td>68.0</td><td>18.6</td><td>37.3</td><td>27.9</td><td>71.7</td><td>72.6</td><td>72.1</td><td>78.7</td><td>66.5</td><td>72.6</td><td>72.2</td><td>67.8</td><td>70.0</td><td>54.1</td><td>34.5</td><td>44.3</td></tr>
-              <tr><td>18</td><td class="model-cell">SD2.1</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-2-1">Link</a></td><td>2025-09-10</td><td>54.0</td><td>47.7</td><td><b>50.8</b></td><td>48.9</td><td>28.4</td><td>38.6</td><td>66.0</td><td>57.6</td><td>61.8</td><td>16.7</td><td>31.4</td><td>24.0</td><td>62.7</td><td>66.5</td><td>64.6</td><td>68.5</td><td>62.1</td><td>65.3</td><td>64.8</td><td>58.3</td><td>61.5</td><td>50.7</td><td>29.8</td><td>40.2</td></tr>
-              <tr><td>19</td><td class="model-cell">SD1.5</td><td><a href="https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5">Link</a></td><td>2025-09-10</td><td>48.8</td><td>43.3</td><td><b>46.0</b></td><td>40.7</td><td>23.7</td><td>32.2</td><td>61.2</td><td>52.7</td><td>56.9</td><td>11.4</td><td>24.1</td><td>17.8</td><td>56.7</td><td>61.5</td><td>59.1</td><td>66.9</td><td>60.7</td><td>63.8</td><td>57.5</td><td>53.4</td><td>55.4</td><td>47.3</td><td>26.8</td><td>37.0</td></tr>
-            </tbody>
-          </table>
+    <!-- Subsection: Model Comparison (with Carousel) -->
+    <div class="columns is-centered mt-6">
+      <div class="column is-full has-text-centered">
+        <h2 class="title is-3">Model Comparison</h2>
+        <div class="content mt-4">
+          <p>
+            Some sample outputs on MathCanvas-Bench from a range of models, including LMMs (Gemini-2.5-Pro, GPT-5) and ULMMs (BAGEL-Zebra-CoT, Nano-Banana, BAGEL-Canvas).
+          </p>
+          
+          <div id="bench-results-carousel" class="carousel results-carousel">
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/teaser_LMM.jpg" alt="LMMs Comparison on MathCanvas-Bench" width="100%" />
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/model_response_crop.jpg" alt="ULMMs Comparison on MathCanvas-Bench" width="100%" />
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
+    </div>
+    
+  </div>
+</section>
 
-      <!-- Leaderboard 3: PRISM-Bench-ZH (GPT4.1) -->
-      <div id="leaderboard-tab-3" class="leaderboard-content">
-        <div class="table-container">
-          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth leaderboard-table">
-            <thead>
-              <tr>
-                <th rowspan="2">#</th>
-                <th rowspan="2">Model</th>
-                <th rowspan="2">Source</th>
-                <th rowspan="2">Date</th>
-                <th colspan="3">Overall</th>
-                <th colspan="3">Imagination</th>
-                <th colspan="3">Entity</th>
-                <th colspan="3">Text rendering</th>
-                <th colspan="3">Style</th>
-                <th colspan="3">Affection</th>
-                <th colspan="3">Composition</th>
-                <th colspan="3">Long text</th>
-              </tr>
-              <tr>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td class="model-cell gold">GPT-Image-1 [High] 🥇</td><td><a href="https://platform.openai.com/docs/guides/image-generation?image-generation-model=gpt-image-1">Link</a></td><td>2025-09-10</td><td>87.7</td><td>87.2</td><td class="gold"><b>87.5</b></td><td>88.8</td><td>90.4</td><td>89.6</td><td>85.9</td><td>92.4</td><td>89.2</td><td>83.9</td><td>67.7</td><td>75.8</td><td>93.9</td><td>91.7</td><td>92.8</td><td>91.5</td><td>86.5</td><td>89.0</td><td>92.4</td><td>97.3</td><td>94.9</td><td>77.2</td><td>84.3</td><td>80.8</td></tr>
-              <tr><td>2</td><td class="model-cell silver">SEEDream 3.0 🥈</td><td><a href="https://seed.bytedance.com/zh/tech/seedream3_0">Link</a></td><td>2025-09-10</td><td>81.9</td><td>82.0</td><td class="silver"><b>82.0</b></td><td>77.2</td><td>77.8</td><td>77.5</td><td>77.6</td><td>78.6</td><td>78.1</td><td>79.7</td><td>71.9</td><td>75.8</td><td>87.8</td><td>83.2</td><td>85.5</td><td>88.7</td><td>85.1</td><td>86.9</td><td>87.7</td><td>94.4</td><td>91.1</td><td>74.3</td><td>82.7</td><td>78.5</td></tr>
-              <tr><td>3</td><td class="model-cell bronze">Qwen-Image 🥉</td><td><a href="https://huggingface.co/Qwen/Qwen-Image">Link</a></td><td>2025-09-10</td><td>80.8</td><td>81.3</td><td class="bronze"><b>81.1</b></td><td>80.1</td><td>79.6</td><td>79.9</td><td>75.6</td><td>79.7</td><td>77.7</td><td>76.9</td><td>62.9</td><td>69.9</td><td>90.2</td><td>84.3</td><td>87.3</td><td>87.4</td><td>84.9</td><td>86.2</td><td>86.6</td><td>93.4</td><td>90.0</td><td>68.9</td><td>84.2</td><td>76.6</td></tr>
-              <tr><td>4</td><td class="model-cell">Bagel</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>65.5</td><td>65.2</td><td><b>65.4</b></td><td>72.8</td><td>64.7</td><td>68.8</td><td>53.9</td><td>62.2</td><td>58.1</td><td>49.2</td><td>29.0</td><td>39.1</td><td>73.9</td><td>68.4</td><td>71.2</td><td>81.4</td><td>73.5</td><td>77.5</td><td>69.0</td><td>89.8</td><td>79.4</td><td>58.1</td><td>68.7</td><td>63.4</td></tr>
-              <tr><td>5</td><td class="model-cell">Bagel-CoT</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>64.4</td><td>62.4</td><td><b>63.4</b></td><td>75.1</td><td>69.3</td><td>72.2</td><td>53.3</td><td>58.8</td><td>56.1</td><td>42.6</td><td>16.3</td><td>29.5</td><td>73.6</td><td>66.6</td><td>70.1</td><td>81.2</td><td>78.0</td><td>79.6</td><td>74.0</td><td>83.6</td><td>78.8</td><td>50.7</td><td>64.3</td><td>57.5</td></tr>
-              <tr><td>6</td><td class="model-cell">HiDream-I1-Full</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Full">Link</a></td><td>2025-09-10</td><td>60.8</td><td>54.9</td><td><b>57.9</b></td><td>53.6</td><td>47.3</td><td>50.5</td><td>63.1</td><td>60.8</td><td>62.0</td><td>34.6</td><td>16.3</td><td>25.5</td><td>74.1</td><td>65.5</td><td>69.8</td><td>80.9</td><td>67.3</td><td>74.1</td><td>73.8</td><td>76.1</td><td>75.0</td><td>45.4</td><td>50.8</td><td>48.1</td></tr>
-              <tr><td>7</td><td class="model-cell">HiDream-I1-Dev</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Dev">Link</a></td><td>2025-09-10</td><td>55.0</td><td>48.3</td><td><b>51.7</b></td><td>47.3</td><td>41.1</td><td>44.2</td><td>52.8</td><td>49.0</td><td>50.9</td><td>35.2</td><td>14.5</td><td>24.9</td><td>64.5</td><td>52.4</td><td>58.5</td><td>76.3</td><td>66.5</td><td>71.4</td><td>67.6</td><td>68.3</td><td>68.0</td><td>41.1</td><td>46.4</td><td>43.8</td></tr>
-            </tbody>
-          </table>
+<!-- END: MathCanvas-Bench Section -->
+
+
+<!-- START: MathCanvas-Edit & Imagen Section -->
+
+<!-- Gray banner for the main section title -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathcanvas-pt">
+      <span class="mathcanvas-pt" style="vertical-align: middle">MathCanvas-Edit & Imagen</span>
+    </h1>
+  </div>
+</section>
+
+<!-- White content area for all subsections -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Subsection: Curation Pipeline -->
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <h2 class="title is-3">Curation Pipeline</h2>
+        <div class="content mt-4">
+          <img src="static/images/dataset_v3_crop.jpg" alt="Diagram of the curation pipeline" style="max-width: 100%;" />
+          <p class="mt-4">
+            The curation pipeline for the MathCanvas-Edit and MathCanvas-Imagen datasets.
+          </p>
         </div>
       </div>
+    </div>
 
-      <!-- Leaderboard 4: PRISM-Bench-ZH (Qwen2.5-VL) -->
-      <div id="leaderboard-tab-4" class="leaderboard-content">
-        <div class="table-container">
-          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth leaderboard-table">
-            <thead>
-              <tr>
-                <th rowspan="2">#</th>
-                <th rowspan="2">Model</th>
-                <th rowspan="2">Source</th>
-                <th rowspan="2">Date</th>
-                <th colspan="3">Overall</th>
-                <th colspan="3">Imagination</th>
-                <th colspan="3">Entity</th>
-                <th colspan="3">Text rendering</th>
-                <th colspan="3">Style</th>
-                <th colspan="3">Affection</th>
-                <th colspan="3">Composition</th>
-                <th colspan="3">Long text</th>
-              </tr>
-              <tr>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-                <th>Align</th><th>Aes</th><th>Avg</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td class="model-cell gold">GPT-Image-1 [High] 🥇</td><td><a href="https://platform.openai.com/docs/guides/image-generation?image-generation-model=gpt-image-1">Link</a></td><td>2025-09-10</td><td>78.0</td><td>77.4</td><td class="gold"><b>77.7</b></td><td>73.0</td><td>37.6</td><td>55.3</td><td>80.4</td><td>82.1</td><td>81.3</td><td>73.1</td><td>89.9</td><td>81.5</td><td>77.1</td><td>92.4</td><td>84.8</td><td>78.0</td><td>77.8</td><td>77.9</td><td>91.9</td><td>85.7</td><td>88.8</td><td>72.4</td><td>76.3</td><td>74.4</td></tr>
-              <tr><td>2</td><td class="model-cell silver">SEEDream 3.0 🥈</td><td><a href="https://seed.bytedance.com/zh/tech/seedream3_0">Link</a></td><td>2025-09-10</td><td>76.2</td><td>73.2</td><td class="silver"><b>74.7</b></td><td>71.4</td><td>36.6</td><td>54.0</td><td>74.8</td><td>73.8</td><td>74.3</td><td>70.7</td><td>88.0</td><td>79.4</td><td>74.1</td><td>88.0</td><td>81.1</td><td>79.0</td><td>71.4</td><td>75.2</td><td>90.3</td><td>83.2</td><td>86.8</td><td>73.0</td><td>71.2</td><td>72.1</td></tr>
-              <tr><td>3</td><td class="model-cell bronze">Qwen-Image 🥉</td><td><a href="https://huggingface.co/Qwen/Qwen-Image">Link</a></td><td>2025-09-10</td><td>75.0</td><td>65.5</td><td class="bronze"><b>70.3</b></td><td>71.4</td><td>29.9</td><td>50.7</td><td>74.7</td><td>67.8</td><td>71.3</td><td>64.3</td><td>73.1</td><td>68.7</td><td>75.2</td><td>83.2</td><td>79.2</td><td>77.3</td><td>64.5</td><td>70.9</td><td>89.8</td><td>74.1</td><td>82.0</td><td>72.6</td><td>65.8</td><td>69.2</td></tr>
-              <tr><td>4</td><td class="model-cell">Bagel-CoT</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>62.0</td><td>57.4</td><td><b>59.7</b></td><td>64.4</td><td>36.6</td><td>50.5</td><td>62.6</td><td>53.8</td><td>58.2</td><td>25.2</td><td>51.9</td><td>38.6</td><td>65.4</td><td>76.7</td><td>71.1</td><td>74.0</td><td>65.0</td><td>69.5</td><td>81.3</td><td>71.3</td><td>76.3</td><td>61.4</td><td>46.6</td><td>54.0</td></tr>
-              <tr><td>5</td><td class="model-cell">Bagel</td><td><a href="https://github.com/ByteDance-Seed/Bagel">Link</a></td><td>2025-09-10</td><td>61.5</td><td>54.3</td><td><b>57.9</b></td><td>64.6</td><td>36.3</td><td>50.5</td><td>62.7</td><td>55.5</td><td>59.1</td><td>18.6</td><td>26.3</td><td>22.5</td><td>66.0</td><td>76.6</td><td>71.3</td><td>74.9</td><td>66.2</td><td>70.6</td><td>81.3</td><td>72.2</td><td>76.8</td><td>62.4</td><td>47.3</td><td>54.9</td></tr>
-              <tr><td>6</td><td class="model-cell">HiDream-I1-Full</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Full">Link</a></td><td>2025-09-10</td><td>55.9</td><td>55.3</td><td><b>55.6</b></td><td>51.2</td><td>30.8</td><td>41.0</td><td>60.1</td><td>61.3</td><td>60.7</td><td>20.7</td><td>40.6</td><td>30.7</td><td>64.5</td><td>73.8</td><td>69.2</td><td>65.2</td><td>69.1</td><td>67.2</td><td>72.4</td><td>69.0</td><td>70.7</td><td>57.1</td><td>42.8</td><td>50.0</td></tr>
-              <tr><td>7</td><td class="model-cell">HiDream-I1-Dev</td><td><a href="https://huggingface.co/HiDream-ai/HiDream-I1-Dev">Link</a></td><td>2025-09-10</td><td>52.2</td><td>49.7</td><td><b>50.9</b></td><td>48.3</td><td>24.6</td><td>36.5</td><td>52.6</td><td>54.1</td><td>53.4</td><td>18.6</td><td>35.3</td><td>27.0</td><td>59.0</td><td>68.3</td><td>63.7</td><td>65.9</td><td>62.3</td><td>64.1</td><td>66.5</td><td>64.6</td><td>65.6</td><td>54.2</td><td>38.6</td><td>46.4</td></tr>
-            </tbody>
-          </table>
+    <!-- Subsection: Examples (with Carousel) -->
+    <div class="columns is-centered mt-6">
+      <div class="column is-full has-text-centered">
+        <h2 class="title is-3">Examples</h2>
+        <div class="content mt-4">
+          
+          <!-- Carousel with a unique ID to ensure proper functionality -->
+          <div id="edit-imagen-examples-carousel" class="carousel results-carousel">
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/supp_edit_example1_v1_crop.jpg" alt="MathCanvas-Edit example" width="100%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/supp_t2i_example1_v1_crop.jpg" alt="MathCanvas-Imagen text-to-image example 1" width="100%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/supp_t2i_example2_v1_crop.jpg" alt="MathCanvas-Imagen text-to-image example 2" width="100%" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- END: MathCanvas-Edit & Imagen Section -->
+
+<!-- START: MathCanvas-Instruct Section -->
+
+<!-- Gray banner for the main section title -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathcanvas-it">
+      <span class="mathcanvas-it" style="vertical-align: middle">MathCanvas-Instruct</span>
+    </h1>
+  </div>
+</section>
+
+<!-- White content area for the examples -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        <h2 class="title is-3">Examples</h2>
+        <div class="content mt-4">
+          
+          <!-- Carousel with a unique ID to ensure proper functionality -->
+          <div id="instruct-examples-carousel" class="carousel results-carousel">
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/supp_sft_example1_v1_crop.jpg" alt="MathCanvas-Instruct example 1" width="100%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/supp_sft_example2_v1_crop.jpg" alt="MathCanvas-Instruct example 2" width="100%" />
+              </div>
+            </div>
+
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/supp_sft_example3_v1_crop.jpg" alt="MathCanvas-Instruct example 3" width="100%" />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- END: New PRISM-Bench Leaderboard Section -->
 
+<!-- END: MathCanvas-Instruct Section -->
 
 <!--BibTex citation -->
   <section class="section" id="bibtex">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <!-- MODIFICATION: Update the BibTeX entry with your project's details. -->
-      <pre><code>@article{fang2025flux,
-        title={FLUX-Reason-6M & PRISM-Bench: A Million-Scale Text-to-Image Reasoning Dataset and Comprehensive Benchmark}, 
-        author={Fang, Rongyao and Yu, Aldrich and Duan, Chengqi and Huang, Linjiang and Bai, Shuai and Cai, Yuxuan and Wang, Kun and Liu, Si and Liu, Xihui and Li, Hongsheng},
-        journal={arXiv preprint arXiv:2509.09680},
-        year={2025}
-        }</code></pre>
+      <pre><code></code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
