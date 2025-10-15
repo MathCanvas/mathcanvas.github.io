@@ -190,12 +190,15 @@
 
 <!-- Teaser -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- MODIFICATION: Replace 'teaser.png' with a compelling teaser image for your project. -->
-        <img src="static/images/teaser_v2_crop.jpg" alt="Teaser Image" style="max-width:100%; height:auto;">
-      <!-- MODIFICATION: A short, engaging subtitle for your project. -->
-      <h2 class="subtitle has-text-centered">
+  <div class="hero-body">
+    <!-- Image is now outside the 'container', so it can span the full width -->
+    <div class="has-text-centered">
+      <img src="static/images/teaser_v2_crop.jpg" alt="Teaser Image" style="width: 60%; height: auto;">
+    </div>
+    
+    <!-- The subtitle remains inside the container to keep its width constrained -->
+    <div class="container is-max-desktop">
+      <h2 class="subtitle has-text-centered mt-5">
         <b>MathCanvas</b> demonstrates the first successful application of <b>intrinsic Visual Chain-of-Thought (VCoT)</b> for complex mathematical reasoning. Prior attempts fail by generating incorrect (BAGEL-Zebra-CoT) or strategically poor (Nano-Banana) visuals, leading to wrong solutions. In contrast, MathCanvas correctly generates an intermediate visual step that unlocks a simpler, elegant solution path.
       </h2>
     </div>
@@ -344,7 +347,7 @@
             <td>LMM</td>
             <td>✓</td>
             <td>40.9</td>
-            <td>51.5</td>
+            <td><span class="text-red-highlight">51.5</span></td>
             <td>67.0</td>
             <td>54.6</td>
             <td>56.9</td>
